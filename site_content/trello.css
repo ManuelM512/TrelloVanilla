@@ -1,0 +1,163 @@
+.body {
+    position: relative;
+}
+
+.todo {
+    position: relative;
+    background-image: url("imagen.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#columnTitle {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: #172b4d;
+    line-height: 10px;
+}
+
+
+.banner {
+    height: 45px;
+    background: rgb(160, 201, 245);
+    opacity: 50%;
+}
+
+.Trello {
+    font-family: fantasy;
+    font-size: xx-large;
+    text-indent: 15px;
+}
+
+.columns-container {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: auto;
+    min-height: 709px;
+    width: 100%;
+    position: relative;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    padding: 4px; 
+    margin: 5px;
+    min-width: 275px;
+    min-height: 75px;
+    width: 275px;
+    background-color: #ebecf0;
+    box-shadow: #091E4240;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+    margin-top: 10px;
+    max-height: 90vh;
+}
+
+.card {
+    display: inline-block !important;
+    cursor: pointer;
+    margin: 3px;
+    padding: 5px;
+    width: 260px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0.5px #676767 !important;
+    position: relative;
+}
+
+.boton {
+    border-radius: 8px;
+    background-color: #a2a2a2;
+    padding: 5px;
+    margin: 5px;
+    min-width: 272px;
+    height: 50px;
+    opacity: 50%;
+    margin-top: 10px;
+    color:black;
+    border:none;
+}
+
+.newCard {
+    bottom: 3px;
+    left: 20px;
+    border-radius: 12px;
+    background-color: #ebecf0;
+    border:none;
+    text-align: left;
+    order: 1;
+    margin-top: 10px;
+}
+
+
+.card-text{
+    display: inline-block;
+    width: 85%;
+    margin-left: 10px;
+    position: relative;
+    user-select: none;
+}
+
+.card:hover{
+    background-color: #cdcdcd;
+}
+
+.three-dots{
+    visibility: hidden;
+    display: inline-block;
+    width: 20px;
+    border: none;
+    background:none;
+    padding: 2px;
+    padding-top: 1px;
+    height: 25px;
+    text-align: center;
+    border-radius: 3px;
+    position: absolute;
+}
+
+.three-dots:hover{
+    background-color: #bdbdbd;
+} 
+  
+.boton:hover{
+    background-color: #b6b6b6;
+    opacity: 75%;
+}
+
+.oculto {
+    display: none;
+}
+
+.dropdown {
+    display: inline-block;
+    position: absolute !important;
+    z-index: 5;
+}
+
+.dropdown-menu {
+    position: absolute;
+    z-index: 5;
+}
+.dropdown .show{
+    position: absolute;
+    z-index: 5;
+}
+
+
+.cardContainer {
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.card:hover .three-dots{
+    visibility: visible;
+}

@@ -1,0 +1,28 @@
+{
+    "columns" : [{
+        "id" : 0,
+        "title": "Columna 1"
+    },
+    {
+        "id" : 1,
+        "title": "Columna 2"
+    }
+    ],
+    "cards" : [
+        {
+            "card": "0card0",
+            "column": 0,
+            "text": "tarjeta"
+        },
+        {
+            "card": "0card1",
+            "column": 0,
+            "text": "tarjeta1"
+        },
+        {
+            "card": "1card0",
+            "column": 1,
+            "text": "tarjeta"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+version: "3"
+services:
+  server:
+    container_name: trello_api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8091:8091"
+    volumes:
+      - .:/app
+    tty: true        
+    stdin_open: true
